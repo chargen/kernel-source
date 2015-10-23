@@ -29,7 +29,7 @@ index 486ef6f..0d62531 100644
  
  	kenter("");
  
-+	if (ctx->index_key.type == &key_type_keyring)
++	if (type == &key_type_keyring)
 +		return ERR_PTR(-EPERM);
 +	
  	user = key_user_lookup(current_fsuid());
