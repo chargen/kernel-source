@@ -115,7 +115,7 @@ Acked-by: jbeulich@suse.com
        cmd_mkcapflags = $(CONFIG_SHELL) $(srctree)/$(src)/mkcapflags.sh $< $@
 --- a/arch/x86/kernel/cpu/amd.c
 +++ b/arch/x86/kernel/cpu/amd.c
-@@ -520,9 +520,11 @@ static void early_init_amd(struct cpuinf
+@@ -524,9 +524,11 @@ static void early_init_amd(struct cpuinf
  
  }
  
@@ -127,7 +127,7 @@ Acked-by: jbeulich@suse.com
  
  static void init_amd(struct cpuinfo_x86 *c)
  {
-@@ -871,6 +873,7 @@ static const struct cpu_dev amd_cpu_dev 
+@@ -875,6 +877,7 @@ static const struct cpu_dev amd_cpu_dev 
  
  cpu_dev_register(amd_cpu_dev);
  
@@ -135,7 +135,7 @@ Acked-by: jbeulich@suse.com
  /*
   * AMD errata checking
   *
-@@ -934,3 +937,4 @@ static bool cpu_has_amd_erratum(struct c
+@@ -938,3 +941,4 @@ static bool cpu_has_amd_erratum(struct c
  
  	return false;
  }
